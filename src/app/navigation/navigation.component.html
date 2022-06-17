@@ -1,9 +1,9 @@
 <mat-sidenav-container class="example-container">
-    <mat-sidenav #sidenav mode="side">
-        Sidenav content
+    <mat-sidenav #sidenav [fixedInViewport]="true" mode="side" style="border-right:5px">
+        <button mat-button (click)="sidenav.toggle()"><img style="width: 50px; height: auto;"src="assets/newcomer mark.png"></button>
     </mat-sidenav>
-
     <mat-sidenav-content>
+        <app-banner (toggleEvent)="sidenav.toggle()"></app-banner>
         <router-outlet></router-outlet>
     </mat-sidenav-content>
 </mat-sidenav-container>

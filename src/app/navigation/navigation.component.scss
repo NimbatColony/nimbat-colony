@@ -1,14 +1,26 @@
-.example-container {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
-  
-  .example-events {
-    width: 300px;
-    height: 200px;
-    overflow: auto;
-    border: 1px solid #555;
-  }
+mat-sidenav { 
+    background-color: #6d604f;
+}
+
+h4 {
+    color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+h5 { 
+    color: #000000;
+    padding-top: 10px;
+    padding-bottom: 4px;
+}
+
+button { 
+    font-family: inherit;
+    
+    margin: .25em -1em;
+}
+
+.mat-flat-button {
+    margin-left: -10%;
+    margin-right: -10%;
+}

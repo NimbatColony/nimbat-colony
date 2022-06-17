@@ -1,7 +1,26 @@
-h2 {
-    background-color: #b08436;
+.vertical-banner { 
+    background-color: #6d604f;
+}
+
+h4 {
     color: #ffffff;
-    text-align: center;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+h5 { 
+    color: #000000;
+    padding-top: 10px;
+    padding-bottom: 4px;
+}
+
+button { 
+    font-family: inherit;
+    
+    margin: .25em -1em;
+}
+
+.mat-flat-button {
+    margin-left: -10%;
+    margin-right: -10%;
 }
