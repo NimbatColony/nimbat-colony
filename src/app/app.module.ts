@@ -9,17 +9,22 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatTreeModule } from '@angular/material/tree';
+import { MatCardModule } from '@angular/material/card';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { BannerComponent } from './banner/banner.component';
+import { HomeComponent } from './home/home.component';
+import { ProtectionComponent } from './protection/protection.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
-    BannerComponent
+    BannerComponent,
+    HomeComponent,
+    ProtectionComponent
   ],
   imports: [
     BrowserModule,
@@ -33,6 +38,7 @@ import { BannerComponent } from './banner/banner.component';
     MatIconModule,
     MatMenuModule,
     MatTreeModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

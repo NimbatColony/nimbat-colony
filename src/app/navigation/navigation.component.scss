@@ -1,13 +1,13 @@
-mat-sidenav { 
-    background-color: #6d604f;
-}
+// mat-sidenav { 
+//     background-color: #6d604f;
+// }
 
 h4 {
     color: #ffffff;
     padding-top: 10px;
 }
 
-h5 { 
+h5, h6 { 
     color: #000000;
     padding-top: 10px;
     padding-bottom: 4px;
@@ -22,3 +22,8 @@ button {
     transform: scale(1.15);
     vertical-align: middle;
  }
+
+ .fill { 
+    min-height: 100vh;
+    height: 100vh !important;
+}
