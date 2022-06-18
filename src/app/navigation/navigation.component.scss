@@ -15,11 +15,10 @@ h5 {
 
 button { 
     font-family: inherit;
-    
-    margin: .25em -1em;
+    align-items: center;
 }
 
-.mat-flat-button {
-    margin-left: -10%;
-    margin-right: -10%;
-}
+.icon-display {
+    transform: scale(1.15);
+    vertical-align: middle;
+ }

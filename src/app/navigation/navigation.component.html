@@ -1,6 +1,93 @@
 <mat-sidenav-container class="example-container">
-    <mat-sidenav #sidenav [fixedInViewport]="true" mode="side" style="border-right:5px">
-        <button mat-button (click)="sidenav.toggle()"><img style="width: 50px; height: auto;"src="assets/newcomer mark.png"></button>
+    <mat-sidenav #sidenav [fixedInViewport]="true" mode="side">
+        <div class="container-fluid">
+            <div class="row">
+                <button mat-button [routerLink]=""><img style="width: 100px; height: auto;"
+                        src="assets/newcomer mark.png">
+                    <h5>NimbatColony.info</h5>
+                </button>
+            </div>
+        </div>
+        <mat-divider></mat-divider>
+        <div class="container-fluid">
+            <div class="row">
+                <button mat-button [routerLink]="">
+                    <h5>Nimbat Taxonomy</h5>
+                </button>
+            </div>
+        </div>
+        <mat-divider></mat-divider>
+        <div class="container-fluid">
+            <div class="row">
+                <button mat-button (click)="colonyCulture = !colonyCulture">
+                    <h5>Colony Culture<mat-icon class="icon-display">keyboard_arrow_down</mat-icon>
+                    </h5>
+                </button>
+            </div>
+            <div class="row" @flyInOut *ngIf="colonyCulture">
+                <mat-divider></mat-divider>
+                <button mat-button (click)="colonyCulture = !colonyCulture">
+                    <h5>Flight Proliferation</h5>
+                </button>
+            </div>
+            <div class="row" @flyInOut *ngIf="colonyCulture">
+                <mat-divider></mat-divider>
+                <button mat-button (click)="colonyCulture = !colonyCulture">
+                    <h5>Flight Protection</h5>
+                </button>
+            </div>
+            <div class="row" @flyInOut *ngIf="colonyCulture">
+                <mat-divider></mat-divider>
+                <button mat-button (click)="colonyCulture = !colonyCulture">
+                    <h5>Flight Preservation</h5>
+                </button>
+            </div>
+            <div class="row" @flyInOut *ngIf="colonyCulture">
+                <mat-divider></mat-divider>
+                <button mat-button (click)="colonyCulture = !colonyCulture">
+                    <h5>Flight Populace</h5>
+                </button>
+            </div>
+            <div class="row" @flyInOut *ngIf="colonyCulture">
+                <mat-divider></mat-divider>
+                <button mat-button (click)="colonyCulture = !colonyCulture">
+                    <h5>Flight Progression</h5>
+                </button>
+            </div>
+        </div>
+        <mat-divider></mat-divider>
+        <div class="container-fluid">
+            <div class="row">
+                <button mat-button [routerLink]="">
+                    <h5>Magical Capabilities</h5>
+                </button>
+            </div>
+        </div>
+        <mat-divider></mat-divider>
+        <div class="container-fluid">
+            <div class="row">
+                <button mat-button [routerLink]="">
+                    <h5>Life in the Colony</h5>
+                </button>
+            </div>
+        </div>
+        <mat-divider></mat-divider>
+        <div class="container-fluid">
+            <div class="row">
+                <button mat-button [routerLink]="">
+                    <h5>History of the Colony</h5>
+                </button>
+            </div>
+        </div>
+        <mat-divider></mat-divider>
+        <div class="container-fluid">
+            <div class="row">
+                <button mat-button [routerLink]="">
+                    <h5>Visitants</h5>
+                </button>
+            </div>
+        </div>
+        <mat-divider></mat-divider>
     </mat-sidenav>
     <mat-sidenav-content>
         <app-banner (toggleEvent)="sidenav.toggle()"></app-banner>
