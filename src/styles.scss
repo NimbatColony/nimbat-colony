@@ -63,7 +63,7 @@ $primary: mat-palette($nimbat-primary-palette, 900, 500, 700);
 $secondary: mat-palette($nimbat-primary-palette, 900, 500, 700);
 $warn: mat-palette($nimbat-primary-palette, 900, 500, 700);
 
-$theme: mat.define-dark-theme((
+$theme: mat.define-light-theme((
   color: (
     primary: $nimbat-primary-palette,
     accent: $nimbat-primary-palette,

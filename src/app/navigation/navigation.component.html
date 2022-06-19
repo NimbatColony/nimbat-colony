@@ -2,7 +2,7 @@
     <mat-sidenav #sidenav [fixedInViewport]="true" mode="side">
         <div class="container-fluid">
             <div class="row">
-                <button mat-button color="accent" routerLink=""><img style="width: 200px; height: auto;"
+                <button mat-button routerLink=""><img style="width: 200px; height: auto;"
                         src="assets/newcomer mark.png">
                     <h5>NimbatColony.info</h5>
                 </button>
@@ -20,7 +20,8 @@
         <div class="container-fluid">
             <div class="row">
                 <button mat-button (click)="colonyCulture = !colonyCulture">
-                    <h5>Colony Culture<mat-icon class="icon-display">keyboard_arrow_down</mat-icon>
+                    <h5>Colony Culture<mat-icon class="icon-display" *ngIf="!colonyCulture; else noCulture">keyboard_arrow_down</mat-icon>
+                        <ng-template #noCulture><mat-icon class="icon-display">keyboard_arrow_right</mat-icon></ng-template>
                     </h5>
                 </button>
             </div>

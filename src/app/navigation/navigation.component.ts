@@ -10,10 +10,10 @@ import { Component, OnInit } from '@angular/core';
       state('in', style({ transform: 'translateX(0)' })),
       transition('void => *', [
         style({ transform: 'translateX(-100%)' }),
-        animate(100)
+        animate('0.35s ease-in-out')
       ]),
       transition('* => void', [
-        animate(100, style({ transform: 'translateX(-100%)' }))
+        animate('0.35s ease-in-out', style({ transform: 'translateX(-100%)' }))
       ])
     ])
   ]
