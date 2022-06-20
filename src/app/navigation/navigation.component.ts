@@ -21,7 +21,9 @@ import { Component, OnInit } from '@angular/core';
 export class NavigationComponent implements OnInit {
   events: string[] = [];
   opened: boolean = false;
-  colonyCulture: boolean = false;
+  isColonyCultureShowing: boolean = false;
+  isLifeColonyShowing: boolean = false;
+  isVisitantsShowing: boolean = false;
 
   shouldRun = /(^|.)(stackblitz|webcontainer).(io|com)$/.test(window.location.host);
   constructor() { }

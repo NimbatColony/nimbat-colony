@@ -19,41 +19,41 @@
         <mat-divider></mat-divider>
         <div class="container-fluid">
             <div class="row">
-                <button mat-button (click)="colonyCulture = !colonyCulture">
-                    <h5>Colony Culture<mat-icon class="icon-display" *ngIf="!colonyCulture; else noCulture">keyboard_arrow_down</mat-icon>
+                <button mat-button (click)="isColonyCultureShowing = !isColonyCultureShowing">
+                    <h5>Colony Culture<mat-icon class="icon-display" *ngIf="!isColonyCultureShowing; else noCulture">keyboard_arrow_down</mat-icon>
                         <ng-template #noCulture><mat-icon class="icon-display">keyboard_arrow_right</mat-icon></ng-template>
                     </h5>
                 </button>
             </div>
-            <div class="row" @flyInOut *ngIf="colonyCulture">
+            <div class="row" @flyInOut *ngIf="isColonyCultureShowing">
                 <mat-divider></mat-divider>
                 <button mat-button>
                     <h6 style="text-align:left"><img style="width: 30px; height: auto;"
                         src="assets/proliferation.png"> Flight Proliferation</h6>
                 </button>
             </div>
-            <div class="row" @flyInOut *ngIf="colonyCulture">
+            <div class="row" @flyInOut *ngIf="isColonyCultureShowing">
                 <mat-divider></mat-divider>
                 <button mat-button routerLink="protection">
                     <h6 style="text-align:left"><img style="width: 30px; height: auto;"
                         src="assets/protection.png"> Flight Protection</h6>
                 </button>
             </div>
-            <div class="row" @flyInOut *ngIf="colonyCulture">
+            <div class="row" @flyInOut *ngIf="isColonyCultureShowing">
                 <mat-divider></mat-divider>
                 <button mat-button>
                     <h6 style="text-align:left"><img style="width: 30px; height: auto;"
                         src="assets/preservation.png"> Flight Preservation</h6>
                 </button>
             </div>
-            <div class="row" @flyInOut *ngIf="colonyCulture">
+            <div class="row" @flyInOut *ngIf="isColonyCultureShowing">
                 <mat-divider></mat-divider>
                 <button mat-button>
                     <h6 style="text-align:left"><img style="width: 30px; height: auto;"
                         src="assets/populace.png"> Flight Populace</h6>
                 </button>
             </div>
-            <div class="row" @flyInOut *ngIf="colonyCulture">
+            <div class="row" @flyInOut *ngIf="isColonyCultureShowing">
                 <mat-divider></mat-divider>
                 <button mat-button>
                     <h6 style="text-align:left"><img style="width: 30px; height: auto;"
@@ -72,8 +72,16 @@
         <mat-divider></mat-divider>
         <div class="container-fluid">
             <div class="row">
-                <button mat-button [routerLink]="">
-                    <h5>Life in the Colony</h5>
+                <button mat-button (click)="isLifeColonyShowing = !isLifeColonyShowing">
+                    <h5>Life in the Colony<mat-icon class="icon-display" *ngIf="!isLifeColonyShowing; else noLife">keyboard_arrow_down</mat-icon>
+                        <ng-template #noLife><mat-icon class="icon-display">keyboard_arrow_right</mat-icon></ng-template>
+                    </h5>
+                </button>
+            </div>
+            <div class="row" @flyInOut *ngIf="isLifeColonyShowing">
+                <mat-divider></mat-divider>
+                <button mat-button>
+                    <h6 style="text-align:left"><mat-icon style="size:110%;vertical-align:bottom;">diamond</mat-icon> Notable Nimbats</h6>
                 </button>
             </div>
         </div>
@@ -88,8 +96,17 @@
         <mat-divider></mat-divider>
         <div class="container-fluid">
             <div class="row">
-                <button mat-button [routerLink]="">
-                    <h5>Visitants</h5>
+                <button mat-button (click)="isVisitantsShowing = !isVisitantsShowing">
+                    <h5>Visitants<mat-icon class="icon-display" *ngIf="!isVisitantsShowing; else noVisitants">keyboard_arrow_down</mat-icon>
+                        <ng-template #noVisitants><mat-icon class="icon-display">keyboard_arrow_right</mat-icon></ng-template>
+                    </h5>
+                </button>
+            </div>
+            <div class="row" @flyInOut *ngIf="isVisitantsShowing">
+                <mat-divider></mat-divider>
+                <button mat-button>
+                    <h6 style="text-align:left"><img style="width: 30px; height: auto;"
+                        src="assets/newcomer mark.png"> Visitants</h6>
                 </button>
             </div>
         </div>
