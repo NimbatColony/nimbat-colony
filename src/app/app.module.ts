@@ -17,6 +17,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { BannerComponent } from './banner/banner.component';
 import { HomeComponent } from './home/home.component';
 import { ProtectionComponent } from './protection/protection.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ProtectionComponent } from './protection/protection.component';
     NavigationComponent,
     BannerComponent,
     HomeComponent,
-    ProtectionComponent
+    ProtectionComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
