@@ -26,5 +26,11 @@ button {
  .fill { 
     min-height: 100vh;
     height: 100vh !important;
+    display: flex;
+    flex-direction: column;
     background-color: #fce5cd;
+}
+
+app-footer { 
+    margin-top: auto;
 }

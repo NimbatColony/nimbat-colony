@@ -1,4 +1,4 @@
-<mat-sidenav-container class="example-container">
+<mat-sidenav-container>
     <mat-sidenav #sidenav [fixedInViewport]="true" mode="side">
         <div class="container-fluid">
             <div class="row">
@@ -20,8 +20,11 @@
         <div class="container-fluid">
             <div class="row">
                 <button mat-button (click)="isColonyCultureShowing = !isColonyCultureShowing">
-                    <h5>Colony Culture<mat-icon class="icon-display" *ngIf="!isColonyCultureShowing; else noCulture">keyboard_arrow_down</mat-icon>
-                        <ng-template #noCulture><mat-icon class="icon-display">keyboard_arrow_right</mat-icon></ng-template>
+                    <h5>Colony Culture<mat-icon class="icon-display" *ngIf="!isColonyCultureShowing; else noCulture">
+                            keyboard_arrow_down</mat-icon>
+                        <ng-template #noCulture>
+                            <mat-icon class="icon-display">keyboard_arrow_right</mat-icon>
+                        </ng-template>
                     </h5>
                 </button>
             </div>
@@ -29,35 +32,35 @@
                 <mat-divider></mat-divider>
                 <button mat-button>
                     <h6 style="text-align:left"><img style="width: 30px; height: auto;"
-                        src="assets/eggshell/proliferation.png"> Flight Proliferation</h6>
+                            src="assets/eggshell/proliferation.png"> Flight Proliferation</h6>
                 </button>
             </div>
             <div class="row" @flyInOut *ngIf="isColonyCultureShowing">
                 <mat-divider></mat-divider>
                 <button mat-button routerLink="protection">
                     <h6 style="text-align:left"><img style="width: 30px; height: auto;"
-                        src="assets/eggshell/protection.png"> Flight Protection</h6>
+                            src="assets/eggshell/protection.png"> Flight Protection</h6>
                 </button>
             </div>
             <div class="row" @flyInOut *ngIf="isColonyCultureShowing">
                 <mat-divider></mat-divider>
                 <button mat-button>
                     <h6 style="text-align:left"><img style="width: 30px; height: auto;"
-                        src="assets/eggshell/preservation.png"> Flight Preservation</h6>
+                            src="assets/eggshell/preservation.png"> Flight Preservation</h6>
                 </button>
             </div>
             <div class="row" @flyInOut *ngIf="isColonyCultureShowing">
                 <mat-divider></mat-divider>
                 <button mat-button>
                     <h6 style="text-align:left"><img style="width: 30px; height: auto;"
-                        src="assets/eggshell/populace.png"> Flight Populace</h6>
+                            src="assets/eggshell/populace.png"> Flight Populace</h6>
                 </button>
             </div>
             <div class="row" @flyInOut *ngIf="isColonyCultureShowing">
                 <mat-divider></mat-divider>
                 <button mat-button>
                     <h6 style="text-align:left"><img style="width: 30px; height: auto;"
-                        src="assets/eggshell/progression.png"> Flight Progression</h6>
+                            src="assets/eggshell/progression.png"> Flight Progression</h6>
                 </button>
             </div>
         </div>
@@ -73,15 +76,20 @@
         <div class="container-fluid">
             <div class="row">
                 <button mat-button (click)="isLifeColonyShowing = !isLifeColonyShowing">
-                    <h5>Life in the Colony<mat-icon class="icon-display" *ngIf="!isLifeColonyShowing; else noLife">keyboard_arrow_down</mat-icon>
-                        <ng-template #noLife><mat-icon class="icon-display">keyboard_arrow_right</mat-icon></ng-template>
+                    <h5>Life in the Colony<mat-icon class="icon-display" *ngIf="!isLifeColonyShowing; else noLife">
+                            keyboard_arrow_down</mat-icon>
+                        <ng-template #noLife>
+                            <mat-icon class="icon-display">keyboard_arrow_right</mat-icon>
+                        </ng-template>
                     </h5>
                 </button>
             </div>
             <div class="row" @flyInOut *ngIf="isLifeColonyShowing">
                 <mat-divider></mat-divider>
                 <button mat-button>
-                    <h6 style="text-align:left"><mat-icon style="size:110%;vertical-align:bottom;">diamond</mat-icon> Notable Nimbats</h6>
+                    <h6 style="text-align:left">
+                        <mat-icon style="size:110%;vertical-align:bottom;">diamond</mat-icon> Notable Nimbats
+                    </h6>
                 </button>
             </div>
         </div>
@@ -97,8 +105,11 @@
         <div class="container-fluid">
             <div class="row">
                 <button mat-button (click)="isVisitantsShowing = !isVisitantsShowing">
-                    <h5>Visitants<mat-icon class="icon-display" *ngIf="!isVisitantsShowing; else noVisitants">keyboard_arrow_down</mat-icon>
-                        <ng-template #noVisitants><mat-icon class="icon-display">keyboard_arrow_right</mat-icon></ng-template>
+                    <h5>Visitants<mat-icon class="icon-display" *ngIf="!isVisitantsShowing; else noVisitants">
+                            keyboard_arrow_down</mat-icon>
+                        <ng-template #noVisitants>
+                            <mat-icon class="icon-display">keyboard_arrow_right</mat-icon>
+                        </ng-template>
                     </h5>
                 </button>
             </div>
@@ -106,15 +117,17 @@
                 <mat-divider></mat-divider>
                 <button mat-button>
                     <h6 style="text-align:left"><img style="width: 30px; height: auto;"
-                        src="assets/eggshell/newcomer-mark.png"> Visitants</h6>
+                            src="assets/eggshell/newcomer-mark.png"> Visitants</h6>
                 </button>
             </div>
         </div>
         <mat-divider></mat-divider>
     </mat-sidenav>
-    <mat-sidenav-content class="mat-app-background fill">
-        <app-banner (toggleEvent)="sidenav.toggle()"></app-banner>
-        <router-outlet></router-outlet>
-        <app-footer></app-footer>
+    <mat-sidenav-content class="fill">
+            <app-banner (toggleEvent)="sidenav.toggle()"></app-banner>
+            <section class="fill-inner">
+                <router-outlet></router-outlet>
+            </section>
+        <app-footer style="background-color: #fce5cd"></app-footer>
     </mat-sidenav-content>
 </mat-sidenav-container>
