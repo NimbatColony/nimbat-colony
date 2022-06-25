@@ -19,6 +19,7 @@ import { HomeComponent } from './home/home.component';
 import { ProtectionComponent } from './protection/protection.component';
 import { FooterComponent } from './footer/footer.component';
 import { UsageGuidelinesComponent } from './usage-guidelines/usage-guidelines.component';
+import { TaxonomyComponent } from './taxonomy/taxonomy.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { UsageGuidelinesComponent } from './usage-guidelines/usage-guidelines.co
     HomeComponent,
     ProtectionComponent,
     FooterComponent,
-    UsageGuidelinesComponent
+    UsageGuidelinesComponent,
+    TaxonomyComponent
   ],
   imports: [
     BrowserModule,
