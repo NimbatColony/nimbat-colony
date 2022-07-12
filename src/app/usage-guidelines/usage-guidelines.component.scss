@@ -30,10 +30,40 @@ a {
 
 .finn {
     width: 100%;
-    height: 85%;
+    height: 20vh;
     border: 1px solid white;
     background-image: url(../../assets/developer-profiles/finn.jpg);
-    background-size: 275%;
+    background-size: 250%;
     background-position-x: right;
-    background-position-y: bottom;
+    background-position-y: center;
+}
+
+.takeo {
+    width: 100%;
+    height: 20vh;
+    border: 1px solid white;
+    background-image: url(../../assets/developer-profiles/takeo.png);
+    background-size: 300%;
+    background-position-x: left;
+    background-position-y: top;
+}
+
+.frequency {
+    width: 100%;
+    height: 20vh;
+    border: 1px solid white;
+    background-image: url(../../assets/developer-profiles/frequency.png);
+    background-size: 200%;
+    background-position-x: right;
+    background-position-y: top;
+}
+.arcfire {
+    width: 100%;
+    height: 20vh;
+    border: 1px solid white;
+    background-image: url(../../assets/developer-profiles/arcfire.png);
+    background-size: 275%;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: top;
 }

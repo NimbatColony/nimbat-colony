@@ -15,7 +15,7 @@ export class UsageGuidelinesComponent implements OnInit {
   onMouseMove(elementName: string, e: any) {
     const element = document.querySelector("#" + elementName);
     if (element) {
-      element.setAttribute("style", `background-position-x: ${-e.layerX}px;background-position-y: ${-e.layerY}px`);
+      element.setAttribute("style", `background-position-x: ${-0.1*e.layerX}px;background-position-y: ${-0.60*e.layerY}px`);
       console.log(`${-e.clientX}px`);
       console.log(e);
     }
