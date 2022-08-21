@@ -15,7 +15,7 @@ export class NotableNimbatsComponent implements OnInit {
     const element = document.querySelector("#" + elementName);
     if (element != null) {
       if (elementName == 'fidget') {
-        element.setAttribute("style", `background-position-x: ${-0.325 * e.layerX}px;background-position-y: ${-2.15 * e.layerY + 315}px`);
+        element.setAttribute("style", `background-position-x: ${-0.325 * e.layerX}px;background-position-y: ${-2.15 * e.layerY + 290}px`);
         console.log(`${-e.clientX}px`);
         console.log(e);
       }
