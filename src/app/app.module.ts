@@ -25,6 +25,9 @@ import { PopulaceComponent } from './populace/populace.component';
 import { PreservationComponent } from './preservation/preservation.component';
 import { ProgressionComponent } from './progression/progression.component';
 import { NotableNimbatsComponent } from './notable-nimbats/notable-nimbats.component';
+import { ColonyChroniclesComponent } from './colony-chronicles/colony-chronicles.component';
+import { CaughtUpInYourWheelingDealingComponent } from './colony-chronicles/caught-up-in-your-wheeling-dealing/caught-up-in-your-wheeling-dealing.component';
+import { MagicalCapabilitiesComponent } from './magical-capabilities/magical-capabilities.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +43,10 @@ import { NotableNimbatsComponent } from './notable-nimbats/notable-nimbats.compo
     PopulaceComponent,
     PreservationComponent,
     ProgressionComponent,
-    NotableNimbatsComponent
+    NotableNimbatsComponent,
+    ColonyChroniclesComponent,
+    CaughtUpInYourWheelingDealingComponent,
+    MagicalCapabilitiesComponent
   ],
   imports: [
     BrowserModule,

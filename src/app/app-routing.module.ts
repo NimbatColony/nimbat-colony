@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
+import { CaughtUpInYourWheelingDealingComponent } from './colony-chronicles/caught-up-in-your-wheeling-dealing/caught-up-in-your-wheeling-dealing.component';
+import { ColonyChroniclesComponent } from './colony-chronicles/colony-chronicles.component';
 import { HomeComponent } from './home/home.component';
+import { MagicalCapabilitiesComponent } from './magical-capabilities/magical-capabilities.component';
 import { PopulaceComponent } from './populace/populace.component';
 import { PreservationComponent } from './preservation/preservation.component';
 import { ProgressionComponent } from './progression/progression.component';
@@ -14,6 +17,9 @@ export const routes: Routes = [
   { path: 'taxonomy', component: TaxonomyComponent },
   { path: 'protection', component: ProtectionComponent },
   { path: 'populace', component: PopulaceComponent },
+  { path: 'colony-chronicles', component: ColonyChroniclesComponent },
+  { path: 'colony-chronicles/caught-up-in-your-wheeling-dealing', component: CaughtUpInYourWheelingDealingComponent },
+  { path: 'magical-capabilities', component: MagicalCapabilitiesComponent },
   { path: 'preservation', component: PreservationComponent },
   { path: 'proliferation', component: ProliferationComponent },
   { path: 'progression', component: ProgressionComponent },
