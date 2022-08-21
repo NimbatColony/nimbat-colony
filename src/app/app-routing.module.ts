@@ -18,7 +18,7 @@ export const routes: Routes = [
   { path: 'protection', component: ProtectionComponent },
   { path: 'populace', component: PopulaceComponent },
   { path: 'colony-chronicles', component: ColonyChroniclesComponent },
-  { path: 'colony-chronicles/caught-up-in-your-wheeling-dealing', component: CaughtUpInYourWheelingDealingComponent },
+  { path: 'colony-chronicles/caught-up-in-your-wheeling-dealing', redirectTo: 'colony-chronicles' },
   { path: 'magical-capabilities', component: MagicalCapabilitiesComponent },
   { path: 'preservation', component: PreservationComponent },
   { path: 'proliferation', component: ProliferationComponent },
