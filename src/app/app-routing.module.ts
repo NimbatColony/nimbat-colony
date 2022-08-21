@@ -5,6 +5,7 @@ import { CaughtUpInYourWheelingDealingComponent } from './colony-chronicles/caug
 import { ColonyChroniclesComponent } from './colony-chronicles/colony-chronicles.component';
 import { HomeComponent } from './home/home.component';
 import { MagicalCapabilitiesComponent } from './magical-capabilities/magical-capabilities.component';
+import { NotableNimbatsComponent } from './notable-nimbats/notable-nimbats.component';
 import { PopulaceComponent } from './populace/populace.component';
 import { PreservationComponent } from './preservation/preservation.component';
 import { ProgressionComponent } from './progression/progression.component';
@@ -23,6 +24,7 @@ export const routes: Routes = [
   { path: 'preservation', component: PreservationComponent },
   { path: 'proliferation', component: ProliferationComponent },
   { path: 'progression', component: ProgressionComponent },
+  { path: 'notable-nimbats', component: NotableNimbatsComponent },
   { path: 'usage-guidelines', component: UsageGuidelinesComponent},
   { path: '', component: HomeComponent}
 ];

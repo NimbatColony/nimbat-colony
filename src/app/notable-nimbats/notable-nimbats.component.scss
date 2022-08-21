@@ -1,0 +1,87 @@
+mat-card { 
+    background-color: #dfcba1;
+    font-family: inherit;
+}
+
+h5 { 
+    color: #1c180d;
+}
+
+.notes {
+    font-family: 'Architects Daughter';
+}
+
+a { 
+    text-decoration: none;
+    color: #3c3218;
+}
+
+.container-fluid { 
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+.light-link { 
+    color: #1c180d;
+}
+
+.inner { 
+    background-color: #8a7942;
+}
+
+.fidget {
+    width: 100%;
+    height: 95%;
+    border: 1px solid white;
+    background-image: url(../../assets/notable-nimbats/fidget.png);
+    background-size: 150%;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.lyra {
+    width: 100%;
+    height: 95%;
+    border: 1px solid white;
+    background-image: url(../../assets/notable-nimbats/lyra.jpg);
+    background-size: 135%;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.frequency {
+    width: 100%;
+    height: 95%;
+    border: 1px solid white;
+    background-image: url(../../assets/notable-nimbats/frequency.png);
+    background-size: 135%;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.maia {
+    width: 100%;
+    height: 95%;
+    border: 1px solid white;
+    background-image: url(../../assets/notable-nimbats/maia.png);
+    background-size: 135%;
+    background-position-x: center;
+    background-position-y: center;
+}
+.nohra {
+    width: 100%;
+    height: 95%;
+    border: 1px solid white;
+    background-image: url(../../assets/notable-nimbats/nohra.png);
+    background-size: 135%;
+    background-position-x: center;
+    background-position-y: center;
+}
+.wavey {
+    width: 100%;
+    height: 95%;
+    border: 1px solid white;
+    background-image: url(../../assets/notable-nimbats/wavelength.png);
+    background-size: 135%;
+    background-position-x: center;
+    background-position-y: center;
+}
