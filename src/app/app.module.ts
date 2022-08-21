@@ -20,6 +20,11 @@ import { ProtectionComponent } from './protection/protection.component';
 import { FooterComponent } from './footer/footer.component';
 import { UsageGuidelinesComponent } from './usage-guidelines/usage-guidelines.component';
 import { TaxonomyComponent } from './taxonomy/taxonomy.component';
+import { ProliferationComponent } from './proliferation/proliferation.component';
+import { PopulaceComponent } from './populace/populace.component';
+import { PreservationComponent } from './preservation/preservation.component';
+import { ProgressionComponent } from './progression/progression.component';
+import { NotableNimbatsComponent } from './notable-nimbats/notable-nimbats.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +35,12 @@ import { TaxonomyComponent } from './taxonomy/taxonomy.component';
     ProtectionComponent,
     FooterComponent,
     UsageGuidelinesComponent,
-    TaxonomyComponent
+    TaxonomyComponent,
+    ProliferationComponent,
+    PopulaceComponent,
+    PreservationComponent,
+    ProgressionComponent,
+    NotableNimbatsComponent
   ],
   imports: [
     BrowserModule,
