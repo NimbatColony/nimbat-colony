@@ -28,6 +28,10 @@ import { NotableNimbatsComponent } from './notable-nimbats/notable-nimbats.compo
 import { ColonyChroniclesComponent } from './colony-chronicles/colony-chronicles.component';
 import { CaughtUpInYourWheelingDealingComponent } from './colony-chronicles/caught-up-in-your-wheeling-dealing/caught-up-in-your-wheeling-dealing.component';
 import { MagicalCapabilitiesComponent } from './magical-capabilities/magical-capabilities.component';
+import { VisitantRunesComponent } from './visitant-runes/visitant-runes.component';
+import { HistoryComponent } from './history/history.component';
+import { CuriousBattesComponent } from './curious-battes/curious-battes.component';
+import { CuriousBattesOocComponent } from './curious-battes/curious-battes-ooc/curious-battes-ooc.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +50,11 @@ import { MagicalCapabilitiesComponent } from './magical-capabilities/magical-cap
     NotableNimbatsComponent,
     ColonyChroniclesComponent,
     CaughtUpInYourWheelingDealingComponent,
-    MagicalCapabilitiesComponent
+    MagicalCapabilitiesComponent,
+    VisitantRunesComponent,
+    HistoryComponent,
+    CuriousBattesComponent,
+    CuriousBattesOocComponent
   ],
   imports: [
     BrowserModule,

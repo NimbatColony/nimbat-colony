@@ -3,6 +3,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { CaughtUpInYourWheelingDealingComponent } from './colony-chronicles/caught-up-in-your-wheeling-dealing/caught-up-in-your-wheeling-dealing.component';
 import { ColonyChroniclesComponent } from './colony-chronicles/colony-chronicles.component';
+import { CuriousBattesOocComponent } from './curious-battes/curious-battes-ooc/curious-battes-ooc.component';
+import { CuriousBattesComponent } from './curious-battes/curious-battes.component';
+import { HistoryComponent } from './history/history.component';
 import { HomeComponent } from './home/home.component';
 import { MagicalCapabilitiesComponent } from './magical-capabilities/magical-capabilities.component';
 import { NotableNimbatsComponent } from './notable-nimbats/notable-nimbats.component';
@@ -13,6 +16,7 @@ import { ProliferationComponent } from './proliferation/proliferation.component'
 import { ProtectionComponent } from './protection/protection.component';
 import { TaxonomyComponent } from './taxonomy/taxonomy.component';
 import { UsageGuidelinesComponent } from './usage-guidelines/usage-guidelines.component';
+import { VisitantRunesComponent } from './visitant-runes/visitant-runes.component';
 
 export const routes: Routes = [
   { path: 'taxonomy', component: TaxonomyComponent },
@@ -20,9 +24,13 @@ export const routes: Routes = [
   { path: 'populace', component: PopulaceComponent },
   { path: 'colony-chronicles', component: ColonyChroniclesComponent },
   { path: 'caught-up-in-your-wheeling-dealing', component: CaughtUpInYourWheelingDealingComponent },
+  { path: 'visitant-runes', component: VisitantRunesComponent },
   { path: 'magical-capabilities', component: MagicalCapabilitiesComponent },
   { path: 'preservation', component: PreservationComponent },
+  { path: 'history-of-the-colony', component: HistoryComponent },
   { path: 'proliferation', component: ProliferationComponent },
+  { path: 'curious-battes', component: CuriousBattesComponent },
+  { path: 'curious-battes-ooc', component: CuriousBattesOocComponent },
   { path: 'progression', component: ProgressionComponent },
   { path: 'notable-nimbats', component: NotableNimbatsComponent },
   { path: 'usage-guidelines', component: UsageGuidelinesComponent},

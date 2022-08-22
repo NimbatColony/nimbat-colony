@@ -104,7 +104,7 @@
         <mat-divider></mat-divider>
         <div class="container-fluid">
             <div class="row">
-                <button mat-button [routerLink]="">
+                <button mat-button routerLink="history-of-the-colony">
                     <h5>History of the Colony</h5>
                 </button>
             </div>
@@ -122,10 +122,18 @@
                 </button>
             </div>
             <div class="row" @flyInOut *ngIf="isVisitantsShowing">
-                <mat-divider></mat-divider>
-                <button mat-button>
+            <mat-divider></mat-divider>
+                <button mat-button routerLink="visitant-runes">
                     <h6 style="text-align:left"><img style="width: 30px; height: auto;"
-                            src="assets/newcomer mark.png"> Visitants</h6>
+                            src="assets/newcomer mark.png"> Visitant Runes</h6>
+                </button>
+            </div>
+        </div>
+        <mat-divider></mat-divider>
+        <div class="container-fluid">
+            <div class="row">
+                <button mat-button routerLink="curious-battes">
+                    <h5>CuriousBattes</h5>
                 </button>
             </div>
         </div>

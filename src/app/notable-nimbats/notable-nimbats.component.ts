@@ -40,7 +40,7 @@ export class NotableNimbatsComponent implements OnInit {
         console.log(e);
       }
       if (elementName == 'wavey') {
-        element.setAttribute("style", `background-position-x: ${-0.3 * e.layerX + 75}px;background-position-y: ${-1.15* e.layerY - 100}px`);
+        element.setAttribute("style", `background-position-x: ${-0.3 * e.layerX + 75}px;background-position-y: ${-1.15* e.layerY + 400}px`);
         console.log(`${-e.clientY}px`);
         console.log(e);
       }
