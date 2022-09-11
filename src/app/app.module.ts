@@ -32,6 +32,9 @@ import { VisitantRunesComponent } from './visitant-runes/visitant-runes.componen
 import { HistoryComponent } from './history/history.component';
 import { CuriousBattesComponent } from './curious-battes/curious-battes.component';
 import { CuriousBattesOocComponent } from './curious-battes/curious-battes-ooc/curious-battes-ooc.component';
+import { VisitantsComponent } from './visitants/visitants.component';
+import { ColonyCultureComponent } from './colony-culture/colony-culture.component';
+import { LifeInTheColonyComponent } from './life-in-the-colony/life-in-the-colony.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +57,10 @@ import { CuriousBattesOocComponent } from './curious-battes/curious-battes-ooc/c
     VisitantRunesComponent,
     HistoryComponent,
     CuriousBattesComponent,
-    CuriousBattesOocComponent
+    CuriousBattesOocComponent,
+    VisitantsComponent,
+    ColonyCultureComponent,
+    LifeInTheColonyComponent
   ],
   imports: [
     BrowserModule,
