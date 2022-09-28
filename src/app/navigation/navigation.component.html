@@ -25,9 +25,9 @@
             </div>
         </div>
         <mat-divider></mat-divider>
-        <div class="container-fluid" (mouseover)="isColonyCultureShowing = true" (mouseleave)="isColonyCultureShowing = false">
+        <div class="container-fluid" appDebounceMouse (debounceMouseEnter)="isColonyCultureShowing = true" (mouseleave)="isColonyCultureShowing = false">
             <div class="row">
-                <button mat-button routerLink="colony-culture">
+                <button mat-button routerLink="colony-culture" id="culture">
                     <h5>Colony Culture<mat-icon class="icon-display" *ngIf="!isColonyCultureShowing; else noCulture">
                             keyboard_arrow_down</mat-icon>
                         <ng-template #noCulture>
@@ -81,9 +81,9 @@
             </div>
         </div>
         <mat-divider></mat-divider>
-        <div class="container-fluid" (mouseover)="isLifeColonyShowing = true" (mouseleave)="isLifeColonyShowing = false">
+        <div class="container-fluid" appDebounceMouse (debounceMouseEnter)="isLifeColonyShowing = true" (mouseleave)="isLifeColonyShowing = false">
             <div class="row">
-                <button mat-button routerLink="life-in-the-colony">
+                <button mat-button routerLink="life-in-the-colony"  id="culture">
                     <h5>Life in the Colony<mat-icon class="icon-display" *ngIf="!isLifeColonyShowing; else noLife">
                             keyboard_arrow_down</mat-icon>
                         <ng-template #noLife>
@@ -110,9 +110,9 @@
             </div>
         </div>
         <mat-divider></mat-divider>
-        <div class="container-fluid" (mouseover)="isVisitantsShowing = true" (mouseleave)="isVisitantsShowing = false">
+        <div class="container-fluid" appDebounceMouse (debounceMouseEnter)="isVisitantsShowing = true" (mouseleave)="isVisitantsShowing = false">
             <div class="row">
-                <button mat-button routerLink="visitants">
+                <button mat-button routerLink="visitants" id="life">
                     <h5>Visitants<mat-icon class="icon-display" *ngIf="!isVisitantsShowing; else noVisitants">
                             keyboard_arrow_down</mat-icon>
                         <ng-template #noVisitants>

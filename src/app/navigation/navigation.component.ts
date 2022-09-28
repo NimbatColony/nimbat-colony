@@ -1,5 +1,6 @@
 import { trigger, state, style, transition, animate } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
+import { fromEvent } from 'rxjs';
 
 @Component({
   selector: 'app-navigation',
@@ -24,6 +25,8 @@ export class NavigationComponent implements OnInit {
   isColonyCultureShowing: boolean = false;
   isLifeColonyShowing: boolean = false;
   isVisitantsShowing: boolean = false;
+
+  clicks = fromEvent(document, 'click');
 
   shouldRun = /(^|.)(stackblitz|webcontainer).(io|com)$/.test(window.location.host);
   constructor() { }

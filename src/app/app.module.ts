@@ -35,6 +35,7 @@ import { CuriousBattesOocComponent } from './curious-battes/curious-battes-ooc/c
 import { VisitantsComponent } from './visitants/visitants.component';
 import { ColonyCultureComponent } from './colony-culture/colony-culture.component';
 import { LifeInTheColonyComponent } from './life-in-the-colony/life-in-the-colony.component';
+import { DebounceMouseDirective } from './directives/debounce-mouse.directive';
 
 @NgModule({
   declarations: [
@@ -60,7 +61,8 @@ import { LifeInTheColonyComponent } from './life-in-the-colony/life-in-the-colon
     CuriousBattesOocComponent,
     VisitantsComponent,
     ColonyCultureComponent,
-    LifeInTheColonyComponent
+    LifeInTheColonyComponent,
+    DebounceMouseDirective
   ],
   imports: [
     BrowserModule,
