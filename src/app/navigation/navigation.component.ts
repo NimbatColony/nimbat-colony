@@ -20,8 +20,6 @@ import { fromEvent } from 'rxjs';
   ]
 })
 export class NavigationComponent implements OnInit {
-  events: string[] = [];
-  opened: boolean = false;
   isColonyCultureShowing: boolean = false;
   isLifeColonyShowing: boolean = false;
   isVisitantsShowing: boolean = false;
