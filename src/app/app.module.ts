@@ -36,6 +36,7 @@ import { VisitantsComponent } from './visitants/visitants.component';
 import { ColonyCultureComponent } from './colony-culture/colony-culture.component';
 import { LifeInTheColonyComponent } from './life-in-the-colony/life-in-the-colony.component';
 import { DebounceMouseDirective } from './directives/debounce-mouse.directive';
+import { ThouHaveYetToBecomeMeComponent } from './colony-chronicles/thou-have-yet-to-become-me/thou-have-yet-to-become-me.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +55,7 @@ import { DebounceMouseDirective } from './directives/debounce-mouse.directive';
     NotableNimbatsComponent,
     ColonyChroniclesComponent,
     CaughtUpInYourWheelingDealingComponent,
+    ThouHaveYetToBecomeMeComponent,
     MagicalCapabilitiesComponent,
     VisitantRunesComponent,
     HistoryComponent,
