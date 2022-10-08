@@ -71,3 +71,7 @@ $theme: mat.define-light-theme((
 ));
 // apply the dark theme
 @include angular-material-theme($theme);
+
+h4, h5 { 
+  text-size-adjust: 90%;
+}
