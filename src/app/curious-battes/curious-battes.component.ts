@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import ic from './cc.json';
 
 @Component({
   selector: 'app-curious-battes',
@@ -6,10 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./curious-battes.component.scss']
 })
 export class CuriousBattesComponent implements OnInit {
-
-  constructor() { }
+  questions: Question[] = ic.questions;
+  constructor() {
+    console.log(this.questions);
+   }
 
   ngOnInit(): void {
   }
 
+}
+
+export interface Question {
+  question: string;
+  answers: string[];
 }

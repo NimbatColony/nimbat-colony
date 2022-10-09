@@ -11,86 +11,13 @@
 
             <h5>Any out of character answers will be documented <a routerLink="/curious-battes-ooc">here</a>.</h5>
             <hr>
-            <h4>What is favorite foods of the elders? -Anon</h4>
-            <h6>"Oh, I can tell you. I have to put out the occasional order for 'em on the Acquisitions list, so I can make some good guesses. Me, I like...cheese puffs. A quick way to my heart is junk food, not gonna lie. Katell likes to eat croutons, toast, and ME. Rosmerta's into grapes, Eislyn's into blueberries...boring. We grow that stuff here! Jena likes those weird peach rings. Y'know, the gummy ones? Seriously though, bring me snacks."<br /><br>
-                -Brianna<br /><br>
-                
-                "I'm hereby putting down an Acquisitions order to SHUT BRIANNA UP."<br /><br>
-                -Katell<br /><br>
-                
-                Answered on 7/5/2022</h6>
-            <hr>
-            <h4>How many plaps does it take to get to the center of a Nimbat? -Anon</h4>
-            <h6>"You'll never find out by asking. That's all I know~!"<br /><br>
-                -Brianna<br /><br>
-
-                Answered on 7/5/2022</h6>
-            <hr>
-            <h4>Pardon me, I gotta question for Rosie and partially for Katell. For those of us seeking work in
-                infrastructure, is there a strict theme on buildings or can themes from outside the colony be used? Like
-                can someone have house out of crystals or a warehouse out of clay brick or can a certain soon to be nim
-                build themselves a small fortress? -KeyInferno</h4>
-            <h6>"Looking to build a home, or some work station? Most of our buildings are based in trees, or made of
-                wood and stone. Maybe every now and then, you might see a pinch of marble. We don't tend to pick up from
-                the outside realm in terms of structure style. Though, I've seen a building or two with something
-                zanier, like a crystal or a metallic monolith... Oh, did you just call me Rosie? We haven't even gotten
-                familiar yet, Anon.~"<br /><br>
-                -Rosmerta<br /><br>
-
-                "You talk to me when it comes to building planning! We can get something, almost anything, going for the
-                fairest price. But we do try and keep the whole 'foresty' theme of the Colony's buildings intact, so I'm
-                afraid picking up a brownstone from the human streets won't cut it."<br /><br>
-                -Katell<br /><br>
-
-                Answered on 6/27/2022</h6>
-            <hr>
-            <h4>Quick! Every Elder's favorite hobbies, go! -Anon</h4>
-            <h6>"If you must know, my curious asker, I'm very much into volleyball. You're welcome to come cheer me on
-                from the seats... I have plenty of room for you in my fanclub. ♥"<br /><br>
-                -Rosmerta<br /><br>
-
-                "...I like horror-related things. Movies. Books. Things like that."<br /><br>
-                -Eislyn<br /><br>
-
-                "Uhm, I JUST picked up cooking as of late and it's quickly starting to become my favorite. Outside of
-                that? I like lookin' at ooold stuff!"<br /><br>
-                -Katell<br /><br>
-
-                "Ah, you mean apart from making you smile? Hee, I'm quite partial to puzzles and craftwork. A shame I
-                don't get the time to really invest! Thankfully, Brianna is sweet enough to provide me with something
-                new every week, in hopes of impressing me. She's much kinder than she appears, don't you
-                think?"<br /><br>
-                -Jena<br /><br>
-
-                "Traaaveling. It kinda comes with the job, but, what can I say? I like to see sights! Getting cooped up
-                in the Colony all day makes me antsy, and when I can't take it out on Katell I get BORED. Hey, can I
-                borrow your phone...?"<br /><br>
-                -Brianna<br /><br>
-
-                Answered on 6/27/2022</h6>
-            <hr>
-            <h4>Who is the most plappable elder? -Anon</h4>
-            <h6>"Oh, honestly? Katell. Definitely Katell! I mean, who doesn’t like cute nerds? Plus, look at her! She’s
-                got gifts of, like, the bodily kind. Hey, come by the Colony and tell her how squeezable her butt
-                looks!”<br /><br>
-                - Brianna<br /><br>
-
-                “BRIANNA THAT’S NOT FUNNY, STOPPIT!”<br /><br>
-                - Katell<br /><br>
-
-                "Well, I do suppose it could be considered part of my job description, esteemed 'anon'. I couldn't begin
-                to fulfill my duties as Flight Proliferation's Elder if I wasn't, now could I?"<br /><br>
-                - Rosmerta<br /><br>
-
-                Answered on 6/23/2022</h6>
-            <hr>
-            <h4>Hey Katell, do you have a favorite book? Or perhaps a genera you prefer when reading? -Anon</h4>
-            <h6>"Awaah, don't make me pick a favorite! I guess my closest favorite is this whole documentation about the
-                mystery of a voyaging team that tried to find a route to the other side of the globe up north. Of
-                course, when you're trying to sail on big ol' wooden sailboats with limited or faulty supplies up in the
-                arctic, bad stuff is bound to happen. The entire crew went missing! Some people are stiiill finding
-                remnants of the voyage... I guess you could say I like looking at old stories! Like, about history and
-                stuff."<br /><br>-Katell<br /><br>Answered on 6/22/2022 </h6>
+            <div *ngFor="let q of questions">
+                <h4>{{q.question}}</h4>
+                <div *ngFor="let a of q.answers">
+                    <h6>{{a}}</h6>
+                </div>
+                <hr>
+            </div>
         </mat-card-content>
     </mat-card>
 </div>
