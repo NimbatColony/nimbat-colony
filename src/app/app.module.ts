@@ -37,6 +37,7 @@ import { ColonyCultureComponent } from './colony-culture/colony-culture.componen
 import { LifeInTheColonyComponent } from './life-in-the-colony/life-in-the-colony.component';
 import { DebounceMouseDirective } from './directives/debounce-mouse.directive';
 import { ThouHaveYetToBecomeMeComponent } from './colony-chronicles/thou-have-yet-to-become-me/thou-have-yet-to-become-me.component';
+import { ChooseYourPathComponent } from './colony-chronicles/choose-your-path/choose-your-path.component';
 
 @NgModule({
   declarations: [
@@ -56,6 +57,7 @@ import { ThouHaveYetToBecomeMeComponent } from './colony-chronicles/thou-have-ye
     ColonyChroniclesComponent,
     CaughtUpInYourWheelingDealingComponent,
     ThouHaveYetToBecomeMeComponent,
+    ChooseYourPathComponent,
     MagicalCapabilitiesComponent,
     VisitantRunesComponent,
     HistoryComponent,

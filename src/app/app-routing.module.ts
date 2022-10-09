@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { CaughtUpInYourWheelingDealingComponent } from './colony-chronicles/caught-up-in-your-wheeling-dealing/caught-up-in-your-wheeling-dealing.component';
+import { ChooseYourPathComponent } from './colony-chronicles/choose-your-path/choose-your-path.component';
 import { ColonyChroniclesComponent } from './colony-chronicles/colony-chronicles.component';
 import { ThouHaveYetToBecomeMeComponent } from './colony-chronicles/thou-have-yet-to-become-me/thou-have-yet-to-become-me.component';
 import { ColonyCultureComponent } from './colony-culture/colony-culture.component';
@@ -29,6 +30,7 @@ export const routes: Routes = [
   { path: 'colony-chronicles', component: ColonyChroniclesComponent },
   { path: 'caught-up-in-your-wheeling-dealing', component: CaughtUpInYourWheelingDealingComponent },
   { path: 'thou-have-yet-to-become-me', component: ThouHaveYetToBecomeMeComponent },
+  { path: 'choose-your-path', component: ChooseYourPathComponent },
   { path: 'visitant-runes', component: VisitantRunesComponent },
   { path: 'magical-capabilities', component: MagicalCapabilitiesComponent },
   { path: 'preservation', component: PreservationComponent },
