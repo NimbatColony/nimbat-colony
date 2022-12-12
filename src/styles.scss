@@ -1,73 +1,75 @@
-/* You can add global styles to this file, and also import other style files */
+// /* You can add global styles to this file, and also import other style files */
 @use '@angular/material' as mat;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
-
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/maps";
 @import "../node_modules/bootstrap/scss/mixins";
 @import "../node_modules/bootstrap/scss/utilities";
 @import "../node_modules/bootstrap/scss/helpers";
-@import "../node_modules/bootstrap/scss/utilities/api";
 @import "styles/variables";
 
-@import "../node_modules/@angular/material/theming";
+// @include mat-core();
 
-@include mat-core();
+// // generated custom palette
+// $nimbat-primary-palette: (
+//     50 : #fffcf9,
+//     100 : #fef7f0,
+//     200 : #fef2e6,
+//     300 : #fdeddc,
+//     400 : #fce9d5,
+//     500 : #fce5cd,
+//     600 : #fce2c8,
+//     700 : #fbdec1,
+//     800 : #fbdaba,
+//     900 : #fad3ae,
+//     A100 : #fad3ae,
+//     A200 : #fad3ae,
+//     A400 : #fad3ae,
+//     A700 : #fad3ae,
+//     contrast: (
+//         50 : #000000,
+//         100 : #000000,
+//         200 : #000000,
+//         300 : #000000,
+//         400 : #000000,
+//         500 : #000000,
+//         600 : #000000,
+//         700 : #000000,
+//         800 : #000000,
+//         900 : #000000,
+//         A100 : #000000,
+//         A200 : #000000,
+//         A400 : #000000,
+//         A700 : #000000,
+//     )
+// );
 
-// generated custom palette
-$nimbat-primary-palette: (
-    50 : #fffcf9,
-    100 : #fef7f0,
-    200 : #fef2e6,
-    300 : #fdeddc,
-    400 : #fce9d5,
-    500 : #fce5cd,
-    600 : #fce2c8,
-    700 : #fbdec1,
-    800 : #fbdaba,
-    900 : #fad3ae,
-    A100 : #fad3ae,
-    A200 : #fad3ae,
-    A400 : #fad3ae,
-    A700 : #fad3ae,
-    contrast: (
-        50 : #000000,
-        100 : #000000,
-        200 : #000000,
-        300 : #000000,
-        400 : #000000,
-        500 : #000000,
-        600 : #000000,
-        700 : #000000,
-        800 : #000000,
-        900 : #000000,
-        A100 : #000000,
-        A200 : #000000,
-        A400 : #000000,
-        A700 : #000000,
-    )
-);
+// $nimbat-secondary-palette: ();
+// $nimbat-warn-palette: ();
 
-$nimbat-secondary-palette: ();
-$nimbat-warn-palette: ();
+// $primary: mat-palette($nimbat-primary-palette, 900, 500, 700);
+// $secondary: mat-palette($nimbat-primary-palette, 900, 500, 700);
+// $warn: mat-palette($nimbat-primary-palette, 900, 500, 700);
 
-$primary: mat-palette($nimbat-primary-palette, 900, 500, 700);
-$secondary: mat-palette($nimbat-primary-palette, 900, 500, 700);
-$warn: mat-palette($nimbat-primary-palette, 900, 500, 700);
-
-$theme: mat.define-light-theme((
-  color: (
-    primary: $nimbat-primary-palette,
-    accent: $nimbat-primary-palette,
-  )
-));
-// apply the dark theme
-@include angular-material-theme($theme);
+// $theme: mat.define-light-theme((
+//   color: (
+//     primary: $nimbat-primary-palette,
+//     accent: $nimbat-primary-palette,
+//   )
+// ));
+// // apply the dark theme
+// @include angular-material-theme($theme);
 
 h4, h5 { 
   text-size-adjust: 90%;
+}
+
+.mat-button, .mat-icon-button, .mat-stroked-button {
+  background: transparent;
+}
+.mat-button:hover, .mat-icon-button:hover, .mat-stroked-button:hover{
+  background: darken($color: (#cdba91), $amount: 5);
 }
