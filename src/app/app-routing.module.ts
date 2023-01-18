@@ -5,6 +5,7 @@ import { CaughtUpInYourWheelingDealingComponent } from './colony-chronicles/caug
 import { ChooseYourPathComponent } from './colony-chronicles/choose-your-path/choose-your-path.component';
 import { ColonyChroniclesComponent } from './colony-chronicles/colony-chronicles.component';
 import { ThouHaveYetToBecomeMeComponent } from './colony-chronicles/thou-have-yet-to-become-me/thou-have-yet-to-become-me.component';
+import { YearRoundComponent } from './colony-chronicles/year-round/year-round.component';
 import { ColonyCultureComponent } from './colony-culture/colony-culture.component';
 import { CuriousBattesOocComponent } from './curious-battes/curious-battes-ooc/curious-battes-ooc.component';
 import { CuriousBattesComponent } from './curious-battes/curious-battes.component';
@@ -30,6 +31,7 @@ export const routes: Routes = [
   { path: 'colony-chronicles', component: ColonyChroniclesComponent },
   { path: 'caught-up-in-your-wheeling-dealing', component: CaughtUpInYourWheelingDealingComponent },
   { path: 'thou-have-yet-to-become-me', component: ThouHaveYetToBecomeMeComponent },
+  { path: 'year-round', component: YearRoundComponent },
   { path: 'choose-your-path', component: ChooseYourPathComponent },
   { path: 'visitant-runes', component: VisitantRunesComponent },
   { path: 'magical-capabilities', component: MagicalCapabilitiesComponent },
