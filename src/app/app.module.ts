@@ -39,6 +39,7 @@ import { DebounceMouseDirective } from './directives/debounce-mouse.directive';
 import { ThouHaveYetToBecomeMeComponent } from './colony-chronicles/thou-have-yet-to-become-me/thou-have-yet-to-become-me.component';
 import { ChooseYourPathComponent } from './colony-chronicles/choose-your-path/choose-your-path.component';
 import { YearRoundComponent } from './colony-chronicles/year-round/year-round.component';
+import { StreamComponent } from './stream/stream.component';
 
 @NgModule({
   declarations: [
@@ -58,6 +59,7 @@ import { YearRoundComponent } from './colony-chronicles/year-round/year-round.co
     ColonyChroniclesComponent,
     CaughtUpInYourWheelingDealingComponent,
     ThouHaveYetToBecomeMeComponent,
+    StreamComponent,
     ChooseYourPathComponent,
     MagicalCapabilitiesComponent,
     VisitantRunesComponent,

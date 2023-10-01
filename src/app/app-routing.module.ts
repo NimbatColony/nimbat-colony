@@ -23,9 +23,11 @@ import { TaxonomyComponent } from './taxonomy/taxonomy.component';
 import { UsageGuidelinesComponent } from './usage-guidelines/usage-guidelines.component';
 import { VisitantRunesComponent } from './visitant-runes/visitant-runes.component';
 import { VisitantsComponent } from './visitants/visitants.component';
+import { StreamComponent } from './stream/stream.component';
 
 export const routes: Routes = [
   { path: 'taxonomy', component: TaxonomyComponent },
+  { path: 'stream', component: StreamComponent },
   { path: 'protection', component: ProtectionComponent },
   { path: 'populace', component: PopulaceComponent },
   { path: 'colony-chronicles', component: ColonyChroniclesComponent },
