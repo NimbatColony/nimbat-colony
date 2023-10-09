@@ -24,10 +24,12 @@ import { UsageGuidelinesComponent } from './usage-guidelines/usage-guidelines.co
 import { VisitantRunesComponent } from './visitant-runes/visitant-runes.component';
 import { VisitantsComponent } from './visitants/visitants.component';
 import { StreamComponent } from './stream/stream.component';
+import { DiscordComponent } from './discord/discord.component';
 
 export const routes: Routes = [
   { path: 'taxonomy', component: TaxonomyComponent },
   { path: 'stream', component: StreamComponent },
+  { path: 'discord', component: DiscordComponent },
   { path: 'protection', component: ProtectionComponent },
   { path: 'populace', component: PopulaceComponent },
   { path: 'colony-chronicles', component: ColonyChroniclesComponent },
