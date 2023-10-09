@@ -40,6 +40,7 @@ import { ThouHaveYetToBecomeMeComponent } from './colony-chronicles/thou-have-ye
 import { ChooseYourPathComponent } from './colony-chronicles/choose-your-path/choose-your-path.component';
 import { YearRoundComponent } from './colony-chronicles/year-round/year-round.component';
 import { StreamComponent } from './stream/stream.component';
+import { DiscordComponent } from './discord/discord.component';
 
 @NgModule({
   declarations: [
@@ -61,6 +62,7 @@ import { StreamComponent } from './stream/stream.component';
     ThouHaveYetToBecomeMeComponent,
     StreamComponent,
     ChooseYourPathComponent,
+    DiscordComponent,
     MagicalCapabilitiesComponent,
     VisitantRunesComponent,
     HistoryComponent,
