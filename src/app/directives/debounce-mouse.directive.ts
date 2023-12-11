@@ -19,7 +19,7 @@ import {
   
     ngOnInit() {
       this.mouseEvents
-        .pipe(debounceTime(250))
+        .pipe(debounceTime(20))
         .subscribe(e => this.debounceMouseEnter.emit(e));
     }
   

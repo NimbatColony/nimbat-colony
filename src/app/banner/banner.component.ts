@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, HostListener, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-banner',
@@ -6,6 +6,17 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
   styleUrls: ['./banner.component.scss']
 })
 export class BannerComponent implements OnInit {
+  isColonyCultureShowing: boolean = false;
+  isLifeShowing: boolean = false;
+  isSticky: boolean = false;
+
+  @HostListener('window:scroll', ['$event']) onScroll() {
+    if (window.scrollY > 100) {
+      this.isSticky = true;
+    } else {
+      this.isSticky = false;
+    }
+  }
   @Output() toggleEvent = new EventEmitter();
   constructor() { }
 

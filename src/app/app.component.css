@@ -1,0 +1,17 @@
+.row { 
+    width: auto;
+}
+* {
+    font-family: 'Lato';
+}
+:host {
+    min-height: 100vh;
+    height: 100vh;
+    display: inline-block;
+}
+
+.fill { 
+    display: inline;
+    min-height: 100vh;
+    background-color: #e6b8a2;
+}

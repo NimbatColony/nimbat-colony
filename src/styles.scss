@@ -11,60 +11,33 @@
 @import "../node_modules/bootstrap/scss/helpers";
 @import "styles/variables";
 
-// @include mat-core();
-
-// // generated custom palette
-// $nimbat-primary-palette: (
-//     50 : #fffcf9,
-//     100 : #fef7f0,
-//     200 : #fef2e6,
-//     300 : #fdeddc,
-//     400 : #fce9d5,
-//     500 : #fce5cd,
-//     600 : #fce2c8,
-//     700 : #fbdec1,
-//     800 : #fbdaba,
-//     900 : #fad3ae,
-//     A100 : #fad3ae,
-//     A200 : #fad3ae,
-//     A400 : #fad3ae,
-//     A700 : #fad3ae,
-//     contrast: (
-//         50 : #000000,
-//         100 : #000000,
-//         200 : #000000,
-//         300 : #000000,
-//         400 : #000000,
-//         500 : #000000,
-//         600 : #000000,
-//         700 : #000000,
-//         800 : #000000,
-//         900 : #000000,
-//         A100 : #000000,
-//         A200 : #000000,
-//         A400 : #000000,
-//         A700 : #000000,
-//     )
-// );
-
-// $nimbat-secondary-palette: ();
-// $nimbat-warn-palette: ();
-
-// $primary: mat-palette($nimbat-primary-palette, 900, 500, 700);
-// $secondary: mat-palette($nimbat-primary-palette, 900, 500, 700);
-// $warn: mat-palette($nimbat-primary-palette, 900, 500, 700);
-
-// $theme: mat.define-light-theme((
-//   color: (
-//     primary: $nimbat-primary-palette,
-//     accent: $nimbat-primary-palette,
-//   )
-// ));
-// // apply the dark theme
-// @include angular-material-theme($theme);
-
+html, body, app-root {
+  height: 100vh;
+  width: 100vw;
+  display: block;
+}body {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
 h4, h5 { 
   text-size-adjust: 90%;
+}
+
+mat-card { 
+  background-color: #d69f7e;
+  color: #633d2c;
+  font-family: inherit;
+  margin-bottom: 1%;
+}
+
+.notes {
+  font-family: 'Architects Daughter';
+}
+
+a { 
+  text-decoration: none;
+  color: #633d2c;
 }
 
 .mat-button, .mat-icon-button, .mat-stroked-button {
@@ -72,4 +45,15 @@ h4, h5 {
 }
 .mat-button:hover, .mat-icon-button:hover, .mat-stroked-button:hover{
   background: darken($color: (#cdba91), $amount: 5);
+}
+
+:host {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; 
+  border: solid 3px yellow; /* for debugging purposes */
 }

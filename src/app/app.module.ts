@@ -9,15 +9,14 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
 import { MatLegacyMenuModule as MatMenuModule } from '@angular/material/legacy-menu';
 import { MatTreeModule } from '@angular/material/tree';
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatLegacyCardModule as MatCardModule } from '@angular/material/legacy-card';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavigationComponent } from './navigation/navigation.component';
 import { BannerComponent } from './banner/banner.component';
 import { HomeComponent } from './home/home.component';
 import { ProtectionComponent } from './protection/protection.component';
-import { FooterComponent } from './footer/footer.component';
 import { UsageGuidelinesComponent } from './usage-guidelines/usage-guidelines.component';
 import { TaxonomyComponent } from './taxonomy/taxonomy.component';
 import { ProliferationComponent } from './proliferation/proliferation.component';
@@ -45,11 +44,9 @@ import { DiscordComponent } from './discord/discord.component';
 @NgModule({
   declarations: [
     AppComponent,
-    NavigationComponent,
     BannerComponent,
     HomeComponent,
     ProtectionComponent,
-    FooterComponent,
     UsageGuidelinesComponent,
     TaxonomyComponent,
     ProliferationComponent,
@@ -80,6 +77,7 @@ import { DiscordComponent } from './discord/discord.component';
     AppRoutingModule,
     FormsModule,
     MatSidenavModule,
+    MatToolbarModule,
     MatCheckboxModule,
     MatButtonModule,
     MatDividerModule,
