@@ -8,25 +8,17 @@
                 <h5 class="title-center">Colony Chronicles</h5>
             </button>
             <span class="spacer"></span>
-            <div appDebounceMouse (debounceMouseEnter)="isColonyCultureShowing = true" (mouseleave)="isColonyCultureShowing = false">
+            <div appDebounceMouse (debounceMouseEnter)="isColonyCultureShowing = true"
+                (mouseleave)="isColonyCultureShowing = false">
                 <div class="dropdown">
-                    <button routerLink="colony-culture">
-                        <h5 class="title-center">Colony Culture <mat-icon class="icon-display"
+                    <button>
+                        <h5 class="title-center">Flights <mat-icon class="icon-display"
                                 *ngIf="!isColonyCultureShowing; else noCulture">
                                 keyboard_arrow_down</mat-icon><ng-template #noCulture>
                                 <mat-icon class="icon-display">keyboard_arrow_up</mat-icon>
                             </ng-template></h5>
                     </button>
                     <div style="background-color: #633d2c;" class="dropdown-content-left container">
-                        <div class="row" routerLink="history-of-the-colony"><mat-divider></mat-divider>
-                            <h5 style="text-align:center">History of the Colony</h5>
-                        </div>
-                        <div class="row" routerLink="visitants"><mat-divider></mat-divider>
-                            <h5 style="text-align:center">Visitants</h5>
-                        </div>
-                        <div class="row" routerLink="visitant-runes"><mat-divider></mat-divider>
-                            <h5 style="text-align:center">Visitant Runes</h5>
-                        </div>
                         <div class="row" routerLink="proliferation"><mat-divider></mat-divider>
                             <h5 style="text-align:center">Flight Proliferation</h5>
                         </div>
@@ -42,13 +34,32 @@
                         <div class="row" routerLink="progression"><mat-divider></mat-divider>
                             <h5 style="text-align:center">Flight Progression</h5>
                         </div>
+                        <div class="row" routerLink="production"><mat-divider></mat-divider>
+                            <h5 style="text-align:center">Flight Production</h5>
+                        </div>
                     </div>
                 </div>
             </div>
             <span class="spacer-center"></span>
-            <button routerLink="magical-capabilities">
-                <h5 class="title-center">Magical Capabilities</h5>
-            </button>
+            <div appDebounceMouse (debounceMouseEnter)="isLifeShowing = true" (mouseleave)="isLifeShowing = false">
+                <div class="dropdown">
+                    <button routerLink="taxonomy">
+                        <h5 class="title-center">Nimbat Taxonomy<mat-icon class="icon-display"
+                                *ngIf="!isLifeShowing; else noLife">
+                                keyboard_arrow_down</mat-icon><ng-template #noLife>
+                                <mat-icon class="icon-display">keyboard_arrow_up</mat-icon>
+                            </ng-template></h5>
+                    </button>
+                    <div style="background-color: #633d2c;" class="dropdown-content-right container">
+                        <div class="row" routerLink="taxonomy"><mat-divider></mat-divider>
+                            <h5 style="text-align:center">Taxonomy</h5>
+                        </div>
+                        <div class="row" routerLink="magical-capabilities"><mat-divider></mat-divider>
+                            <h5 style="text-align:center">Magical Capabilities</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <span class="spacer"></span>
             <div appDebounceMouse (debounceMouseEnter)="isLifeShowing = true" (mouseleave)="isLifeShowing = false">
                 <div class="dropdown">
@@ -60,19 +71,18 @@
                             </ng-template></h5>
                     </button>
                     <div style="background-color: #633d2c;" class="dropdown-content-right container">
-                        <div class="row" routerLink="taxonomy"><mat-divider></mat-divider>
-                            <h5 style="text-align:center">Nimbat Taxonomy</h5>
+                        <div class="row" routerLink="colony-culture"><mat-divider></mat-divider>
+                            <h5 style="text-align:center">Colony Culture</h5>
                         </div>
-                        <div class="row" routerLink="notable-nimbats"><mat-divider></mat-divider>
-                            <h5 style="text-align:center">Notable Nimbats</h5>
+                        <div class="row" routerLink="history-of-the-colony"><mat-divider></mat-divider>
+                            <h5 style="text-align:center">History of the Colony</h5>
+                        </div>
+                        <div class="row" routerLink="visitants"><mat-divider></mat-divider>
+                            <h5 style="text-align:center">Visitant Information</h5>
                         </div>
                     </div>
                 </div>
             </div>
-            <span class="spacer-center"></span>
-            <button routerLink="curious-battes">
-                <h5 class="title-center">CuriousBattes</h5>
-            </button>
             <span class="spacer"></span>
         </mat-toolbar-row>
         <mat-toolbar-row style="background-color: #ed2d47;">

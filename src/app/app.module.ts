@@ -23,11 +23,9 @@ import { ProliferationComponent } from './proliferation/proliferation.component'
 import { PopulaceComponent } from './populace/populace.component';
 import { PreservationComponent } from './preservation/preservation.component';
 import { ProgressionComponent } from './progression/progression.component';
-import { NotableNimbatsComponent } from './notable-nimbats/notable-nimbats.component';
 import { ColonyChroniclesComponent } from './colony-chronicles/colony-chronicles.component';
 import { CaughtUpInYourWheelingDealingComponent } from './colony-chronicles/caught-up-in-your-wheeling-dealing/caught-up-in-your-wheeling-dealing.component';
 import { MagicalCapabilitiesComponent } from './magical-capabilities/magical-capabilities.component';
-import { VisitantRunesComponent } from './visitant-runes/visitant-runes.component';
 import { HistoryComponent } from './history/history.component';
 import { CuriousBattesComponent } from './curious-battes/curious-battes.component';
 import { CuriousBattesOocComponent } from './curious-battes/curious-battes-ooc/curious-battes-ooc.component';
@@ -40,6 +38,7 @@ import { ChooseYourPathComponent } from './colony-chronicles/choose-your-path/ch
 import { YearRoundComponent } from './colony-chronicles/year-round/year-round.component';
 import { StreamComponent } from './stream/stream.component';
 import { DiscordComponent } from './discord/discord.component';
+import { ProductionComponent } from './production/production.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +52,6 @@ import { DiscordComponent } from './discord/discord.component';
     PopulaceComponent,
     PreservationComponent,
     ProgressionComponent,
-    NotableNimbatsComponent,
     ColonyChroniclesComponent,
     CaughtUpInYourWheelingDealingComponent,
     ThouHaveYetToBecomeMeComponent,
@@ -61,8 +59,8 @@ import { DiscordComponent } from './discord/discord.component';
     ChooseYourPathComponent,
     DiscordComponent,
     MagicalCapabilitiesComponent,
-    VisitantRunesComponent,
     HistoryComponent,
+    ProductionComponent,
     CuriousBattesComponent,
     CuriousBattesOocComponent,
     VisitantsComponent,

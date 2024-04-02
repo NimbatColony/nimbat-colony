@@ -13,7 +13,6 @@ import { HistoryComponent } from './history/history.component';
 import { HomeComponent } from './home/home.component';
 import { LifeInTheColonyComponent } from './life-in-the-colony/life-in-the-colony.component';
 import { MagicalCapabilitiesComponent } from './magical-capabilities/magical-capabilities.component';
-import { NotableNimbatsComponent } from './notable-nimbats/notable-nimbats.component';
 import { PopulaceComponent } from './populace/populace.component';
 import { PreservationComponent } from './preservation/preservation.component';
 import { ProgressionComponent } from './progression/progression.component';
@@ -21,10 +20,10 @@ import { ProliferationComponent } from './proliferation/proliferation.component'
 import { ProtectionComponent } from './protection/protection.component';
 import { TaxonomyComponent } from './taxonomy/taxonomy.component';
 import { UsageGuidelinesComponent } from './usage-guidelines/usage-guidelines.component';
-import { VisitantRunesComponent } from './visitant-runes/visitant-runes.component';
 import { VisitantsComponent } from './visitants/visitants.component';
 import { StreamComponent } from './stream/stream.component';
 import { DiscordComponent } from './discord/discord.component';
+import { ProductionComponent } from './production/production.component';
 
 export const routes: Routes = [
   { path: 'taxonomy', component: TaxonomyComponent },
@@ -37,18 +36,17 @@ export const routes: Routes = [
   { path: 'thou-have-yet-to-become-me', component: ThouHaveYetToBecomeMeComponent },
   { path: 'year-round', component: YearRoundComponent },
   { path: 'choose-your-path', component: ChooseYourPathComponent },
-  { path: 'visitant-runes', component: VisitantRunesComponent },
   { path: 'magical-capabilities', component: MagicalCapabilitiesComponent },
   { path: 'preservation', component: PreservationComponent },
   { path: 'history-of-the-colony', component: HistoryComponent },
   { path: 'proliferation', component: ProliferationComponent },
+  { path: 'production', component: ProductionComponent },
   { path: 'visitants', component: VisitantsComponent },
   { path: 'life-in-the-colony', component: LifeInTheColonyComponent },
   { path: 'colony-culture', component: ColonyCultureComponent },
   { path: 'curious-battes', component: CuriousBattesComponent },
   { path: 'curious-battes-ooc', component: CuriousBattesOocComponent },
   { path: 'progression', component: ProgressionComponent },
-  { path: 'notable-nimbats', component: NotableNimbatsComponent },
   { path: 'usage-guidelines', component: UsageGuidelinesComponent},
   { path: '', component: HomeComponent}
 ];
