@@ -10,13 +10,13 @@ export class BannerComponent implements OnInit {
   isLifeShowing: boolean = false;
   isSticky: boolean = false;
 
-  @HostListener('window:scroll', ['$event']) onScroll() {
-    if (window.scrollY > 100) {
-      this.isSticky = true;
-    } else {
-      this.isSticky = false;
-    }
-  }
+  // @HostListener('window:scroll', ['$event']) onScroll() {
+  //   if (window.scrollY > 100) {
+  //     this.isSticky = true;
+  //   } else {
+  //     this.isSticky = false;
+  //   }
+  // }
   @Output() toggleEvent = new EventEmitter();
   constructor() { }
 

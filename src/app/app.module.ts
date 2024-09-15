@@ -27,8 +27,6 @@ import { ColonyChroniclesComponent } from './colony-chronicles/colony-chronicles
 import { CaughtUpInYourWheelingDealingComponent } from './colony-chronicles/caught-up-in-your-wheeling-dealing/caught-up-in-your-wheeling-dealing.component';
 import { MagicalCapabilitiesComponent } from './magical-capabilities/magical-capabilities.component';
 import { HistoryComponent } from './history/history.component';
-import { CuriousBattesComponent } from './curious-battes/curious-battes.component';
-import { CuriousBattesOocComponent } from './curious-battes/curious-battes-ooc/curious-battes-ooc.component';
 import { VisitantsComponent } from './visitants/visitants.component';
 import { ColonyCultureComponent } from './colony-culture/colony-culture.component';
 import { LifeInTheColonyComponent } from './life-in-the-colony/life-in-the-colony.component';
@@ -61,8 +59,6 @@ import { ProductionComponent } from './production/production.component';
     MagicalCapabilitiesComponent,
     HistoryComponent,
     ProductionComponent,
-    CuriousBattesComponent,
-    CuriousBattesOocComponent,
     VisitantsComponent,
     ColonyCultureComponent,
     LifeInTheColonyComponent,
