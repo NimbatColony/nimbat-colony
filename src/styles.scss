@@ -1,5 +1,10 @@
 // __<<ngM2ThemingMigrationEscapedComment0>>__
+@use 'sass:math';
 @use '@angular/material' as mat;
+
+@function abs($value){
+  @return math.abs($value);
+}
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
@@ -13,7 +18,7 @@
 
 html, body, app-root {
   height: 100vh;
-  width: 100vw;
+  width: 99vw;
   display: block;
 }body {
   margin: 0;
@@ -45,6 +50,10 @@ a {
 }
 .mat-button:hover, .mat-icon-button:hover, .mat-stroked-button:hover{
   background: darken($color: (#cdba91), $amount: 5);
+}
+
+.light-link {
+  text-decoration: underline;
 }
 
 :host {
