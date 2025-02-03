@@ -2,9 +2,10 @@ import { DOCUMENT } from '@angular/common';
 import { Component, Inject, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-stream',
-  templateUrl: './stream.component.html',
-  styleUrls: ['./stream.component.scss']
+    selector: 'app-stream',
+    templateUrl: './stream.component.html',
+    styleUrls: ['./stream.component.scss'],
+    standalone: false
 })
 export class StreamComponent implements OnInit {
 

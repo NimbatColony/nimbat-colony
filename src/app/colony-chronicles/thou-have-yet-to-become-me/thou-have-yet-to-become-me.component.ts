@@ -2,9 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-thou-have-yet-to-become-me',
-  templateUrl: './thou-have-yet-to-become-me.component.html',
-  styleUrls: ['./thou-have-yet-to-become-me.component.scss']
+    selector: 'app-thou-have-yet-to-become-me',
+    templateUrl: './thou-have-yet-to-become-me.component.html',
+    styleUrls: ['./thou-have-yet-to-become-me.component.scss'],
+    standalone: false
 })
 export class ThouHaveYetToBecomeMeComponent implements OnInit {
 

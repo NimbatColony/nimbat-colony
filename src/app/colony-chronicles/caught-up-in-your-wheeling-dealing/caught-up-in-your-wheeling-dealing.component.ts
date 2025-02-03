@@ -2,9 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-caught-up-in-your-wheeling-dealing',
-  templateUrl: './caught-up-in-your-wheeling-dealing.component.html',
-  styleUrls: ['./caught-up-in-your-wheeling-dealing.component.scss']
+    selector: 'app-caught-up-in-your-wheeling-dealing',
+    templateUrl: './caught-up-in-your-wheeling-dealing.component.html',
+    styleUrls: ['./caught-up-in-your-wheeling-dealing.component.scss'],
+    standalone: false
 })
 export class CaughtUpInYourWheelingDealingComponent implements OnInit {
 

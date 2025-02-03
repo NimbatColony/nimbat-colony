@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-life-in-the-colony',
-  templateUrl: './life-in-the-colony.component.html',
-  styleUrls: ['./life-in-the-colony.component.scss']
+    selector: 'app-life-in-the-colony',
+    templateUrl: './life-in-the-colony.component.html',
+    styleUrls: ['./life-in-the-colony.component.scss'],
+    standalone: false
 })
 export class LifeInTheColonyComponent implements OnInit {
 

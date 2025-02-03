@@ -9,8 +9,9 @@ import {
   import { debounceTime } from 'rxjs/operators';
   
   @Directive({
-    selector: '[appDebounceMouse]'
-  })
+    selector: '[appDebounceMouse]',
+    standalone: false
+})
   export class DebounceMouseDirective implements OnInit {
     @Output() debounceMouseEnter = new EventEmitter();
     private mouseEvents = new Subject();
